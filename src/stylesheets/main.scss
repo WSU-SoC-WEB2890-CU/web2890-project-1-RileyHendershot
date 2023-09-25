@@ -1,3 +1,282 @@
 /* Your styles go here */
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+#page-content {
+  margin: 2rem 0;
+  padding: 2rem 0;
+}
+
+button {
+  background-color: rgb(57, 43, 208);
+  color: white;
+  margin: 0.75rem;
+  padding: 1rem 0.5rem;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+nav {
+  background-color: white;
+  color: black;
+}
+
+nav img {
+  width: 5rem;
+  margin-bottom: 0;
+  float: left;
+  margin-left: 1rem;
+}
+
+nav ul {
+  clear: none;
+  padding-top: 1rem;
+}
+
+nav .active {
+  background-color: rgba(57, 43, 208, 0.5);
+  border-radius: 0.25rem;
+}
+
+.nav-link {
+  color: black;
+  font-size: 125%;
+}
+
+#hero {
+  width: 100%;
+  height: 90vh;
+  background-image: url(../images/herobackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#hero #hero-body {
+  background-color: rgba(248, 247, 216, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 20vh;
+}
+
+#hero #hero-title {
+  width: 40%;
+  float: left;
+  padding-left: 2rem;
+  margin: 0 2% 2% 2%;
+  font-size: 375%;
+  font-weight: bold;
+}
+
+#hero .card-right {
+  width: 50%;
+  clear: none;
+  float: right;
+  margin: 0 2% 2% 2%;
+}
+
+/* Style the list items */
+#hero form {
+  margin-bottom: 2rem;
+  margin-top: auto;
+  text-align: center;
+}
+
+.form-list {
+  list-style: none;
+  padding: 0;
+}
+
+.form-list li {
+  margin-bottom: 10px;
+}
+
+/* Style the input fields */
+.form-list li input {
+  width: 80%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: default;
+}
+
+#page-content h2 {
+  margin-top: 2rem;
+}
+
+.list-section {
+  text-align: center;
+  display: grid;
+}
+
+.list-section ul {
+  width: 60%;
+  margin: auto;
+  text-align: justify;
+}
+
+.list-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+#how-it-works ul li {
+  list-style-type: none;
+}
+
+#advantages p {
+  margin: 0.5rem 2rem 1rem 2rem;
+  text-align: left;
+}
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.testimonial {
+  background-color: #eaeaea;
+  border: 3px black double;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.testimonial q {
+  margin: 0;
+}
+
+.testimonial-details {
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Center the title over the image */
+.listings {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.bi.bi-arrow-bar-right,
+.bi.bi-arrow-bar-left {
+  font-size: 500%; /* Change the font size to your desired size */
+  color: black; /* Change the color to your desired color */
+}
+
+.listings img {
+  margin-bottom: 1rem;
+}
+
+.listings .listing p strong {
+  text-align: center;
+  display: block;
+  margin-top: 1rem;
+}
+
+/* Style the car-details as a vertical list */
+.listings .listing .car-details {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.listings .listing .car-details li {
+  margin: 5px 0;
+  text-align: left;
+}
+
+/* Add a paragraph at the bottom of car-description */
+
+.listings .listing .car-description {
+  display: flex;
+  justify-content: center;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+.listings .listing .car-description p {
+  margin-top: 1.5rem;
+  text-align: left;
+  width: 59%;
+}
+
+.carousel-control-next-icon {
+  outline-color: black;
+}
+
+/* faqs styles */
+#faqs .answer {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+/* Footer styles */
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-image img {
+  width: 100px; /* Adjust the logo size as needed */
+  margin-bottom: 20px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.footer-columns > div {
+  flex-basis: calc(33.33% - 20px); /* Create three equal-width columns with spacing */
+  margin-left: 3rem;
+  margin-right: 3rem;
+  text-align: left;
+}
+
+footer div strong {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 1rem;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  color: rgb(57, 43, 208);
+}
+
+ul li a:hover {
+  color: #007bff;
+}
+
+.copyright {
+  margin-top: 1.5rem;
+}
